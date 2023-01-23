@@ -86,7 +86,7 @@ setup(name='interactive-organizer',
         'console_scripts': ['interactive_organizer=interactive_organizer.scripts.interactive_organizer:main']
       },
       project_urls={  # Optional
-          'Bug Reports': 'https://github.com/raul23/organize-ebooks/issues',
-          'Source': 'https://github.com/raul23/organize-ebooks',
+          'Bug Reports': 'https://github.com/raul23/interactive-organizer/issues',
+          'Source': 'https://github.com/raul23/interactive-organizer',
       },
       zip_safe=False)
