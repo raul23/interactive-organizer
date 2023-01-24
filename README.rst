@@ -247,10 +247,37 @@ books::
 
 We will go through each of the options in the main menu using this simple command as a starter.
 
+`:information_source:` 
+
+   Ebooks that the script ``organize_ebooks`` was able to identify from non-ISBN metadata (e.g. title)
+   fetched from online sources (e.g. Goodreads) are saved in a folder specified by the option `output-folder-uncertain 
+   <https://github.com/raul23/organize-ebooks#list-of-options>`_. It means that script is not highly confident about the
+   filenames given to these books compared to those books whose ISBNs could be retrieved directly from their contents
+   and succefully used to retrieved metadata from online sources.
+
+Move to another folder
+""""""""""""""""""""""
 Open file in external viewer 
 """"""""""""""""""""""""""""
+By pressing the key 'o' or ``Enter`` will open the given document in an external program which is the default one used
+by the OS for this particular file type. On Linux, this program is called upon by ``xdg-open`` and on macOS, it is done
+by ``open``.
+
+Thus you can check the content of the PDF to make sure that file was correctly renamed. 
+
+.. image:: ./images/open_viewer_program_menu.png
+   :target: ./images/open_viewer_program_menu.png
+   :align: left
+   :alt: External program option chosen from main menu
+   
+.. image:: ./images/viewer_program_ibooks.png
+   :target: ./images/viewer_program_ibooks.png
+   :align: left
+   :alt: External program: iBooks
+
 Read the saved metadata file
 """"""""""""""""""""""""""""
+
 Run shell in terminal
 """""""""""""""""""""
 Interactively reorganize the file
