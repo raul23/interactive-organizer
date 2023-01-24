@@ -227,9 +227,40 @@ To display the script `organize_ebooks.py <./find_iorganize_ebooks/scripts/organ
 
 Explaining some of the options/arguments
 ----------------------------------------
+TODO
 
 Script usage
 ============
+Basic command
+-------------
+Let's say that we want to manually organize some books that were labeled as uncertain by the script 
+`organize_ebooks <https://github.com/raul23/organize-ebooks>`_ that automatically organized a 
+collection of ebooks. Here is a basic command that will allow you to manually inspect these uncertain
+books::
+
+   $ interactive_organizer ~/test/test_organize/commons-books/uncertain/
+
+.. image:: ./images/basic_command_menu.png
+   :target: ./images/basic_command_menu.png
+   :align: left
+   :alt: Basic command: main menu
+
+We will go through each of the options in the main menu using this simple command as a starter.
+
+Open file in external viewer 
+""""""""""""""""""""""""""""
+Read the saved metadata file
+""""""""""""""""""""""""""""
+Run shell in terminal
+"""""""""""""""""""""
+Interactively reorganize the file
+"""""""""""""""""""""""""""""""""
+Read in terminal (with ``less``)
+""""""""""""""""""""""""""""""""
+Run ebook-meta on the file
+""""""""""""""""""""""""""
+Eval code (change env vars)
+"""""""""""""""""""""""""""
 
 Example: manually organize a collection of documents
 ====================================================
