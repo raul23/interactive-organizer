@@ -314,7 +314,28 @@ Interactively reorganize the file
 
 Read in terminal (with ``less``)
 """"""""""""""""""""""""""""""""
+To read the given document from the terminal, press the key ``L`` which will instruct the script to convert
+the file (e.g. pdf, djvu, epub) to text and show the content in the terminal through the program ``less``.
 
+``less`` will let you move easily through the content (page up and page down) and hence you can quickly take
+a peek at the content of file to check if it was correctly named by the automatic script ``organize_ebooks``.
+
+Since the ebook in this example is an epub file, you will see some HTML data in its text content when displaying
+it with ``less``:
+
+.. image:: ./images/less_epub.png
+   :target: ./images/less_epub.png
+   :align: left
+   :alt: Text content from EPUB with less
+
+And here is a sample text content from a PDF file when viewing it with ``less``:
+
+.. image:: ./images/less_pdf.png
+   :target: ./images/less_pdf.png
+   :align: left
+   :alt: Text content from PDF with less
+
+You can then press ``q`` to exit from ``less`` and get back to the main menu.
 
 Run ebook-meta on the file
 """"""""""""""""""""""""""
