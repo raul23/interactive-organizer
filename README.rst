@@ -294,13 +294,11 @@ The script warns you that the 'custom' folder is empty because the `basic comman
 the ``interactive_organizer`` script didn't use the option ``custom-move-base-dir`` (by default it is set to empty). Thus, 
 the new path starts from the current working directory. 
 
-The file in this example will be saved relative to the current working directory but you can also give a full path as it is shown 
-in the next example.
+The file in this example will be saved relative to the current working directory but you can also give a full path.
 
 |
 
-The script will ask you to enter the new path where you want the ebook file to be moved. It autocompletes
-the path that you enter so that it is easier for you to navigate through your filesystem:
+The script autocompletes the path that you enter so that it is easier for you to navigate through your filesystem:
 
 .. image:: ./images/move_file_autocompletes.png
    :target: ./images/move_file_autocompletes.png
