@@ -386,6 +386,9 @@ Press ``?`` to show the metadata of a given document via calibre's ``ebook-meta`
 ``E``: eval code (change env vars)
 """"""""""""""""""""""""""""""""""
 
+Other commands
+--------------
+
 Example: manually organize a collection of documents
 ====================================================
 Through the script ``interactive_organizer.py``
