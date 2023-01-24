@@ -260,6 +260,11 @@ We will go through each of the options in the main menu using this simple comman
    script is not highly confident about the filenames given to these books compared to those books whose ISBNs 
    could be retrieved directly from their contents and successfully used to retrieve metadata from online sources.
 
+`:star:`
+
+  When you are in a submenu (e.g. moving file with the ``m`` option) and want to go back to the main menu, you can 
+  do it by pressing the keys ``Ctrl`` and ``C``.
+
 No metadata file found
 """"""""""""""""""""""
 The user will be warned if an ebook file doesn't have an associated metadata file (as created by the script 
@@ -366,6 +371,14 @@ will be shown in the main menu as the next file to be checked by the user:
 
 ``I/Backspace``: interactively reorganize the file
 """"""""""""""""""""""""""""""""""""""""""""""""""
+This is the part of the menu where you will interact a lot with the script. When pressing the key ``I`` or ``Backspace``,
+you are asked to enter search terms or a new filename within single quotes.
+
+The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata`` which
+will be used to rename the given ebook file.
+
+`:warning:` the script distinguishes search terms and the new filename by considering anything within single quotes
+as the new filename.
 
 ``L``: read in terminal (with ``less``)
 """""""""""""""""""""""""""""""""""""""
