@@ -392,6 +392,8 @@ as the new filename.
    :align: left
    :alt: New filename within single quotes
 
+|
+
 You could also enter a new ISBN as the search term and it will be used to rename the file:
 
 .. image:: ./images/interactive_new_isbn.png
