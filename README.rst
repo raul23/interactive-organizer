@@ -264,7 +264,7 @@ Move to another folder
 """"""""""""""""""""""
 Open file in external viewer 
 """"""""""""""""""""""""""""
-By pressing the key 'o' or ``Enter`` will open the given document in an external program which is the default one used
+Pressing the key 'o' or ``Enter`` will open the given document in an external program which is the default one used
 by the OS for this particular file type. On Linux, this program is called upon by ``xdg-open`` and on macOS, it is done
 by ``open``.
 
