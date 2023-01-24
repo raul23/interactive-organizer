@@ -335,7 +335,9 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
    :align: left
    :alt: Text content from PDF with less
 
-You can then press ``q`` to exit from ``less`` and get back to the main menu.
+|
+
+`:information_source:` You can then press ``q`` to exit from ``less`` and get back to the main menu.
 
 Run ebook-meta on the file
 """"""""""""""""""""""""""
