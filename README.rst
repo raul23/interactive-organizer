@@ -259,6 +259,8 @@ Read in terminal (with ``less``)
 """"""""""""""""""""""""""""""""
 Run ebook-meta on the file
 """"""""""""""""""""""""""
+Skip file
+"""""""""
 Eval code (change env vars)
 """""""""""""""""""""""""""
 
