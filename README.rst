@@ -339,7 +339,7 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
 
 |
 
-`:information_source:` You can then press ``q`` to exit from ``less`` and get back to the main menu.
+`:information_source:` You can then press ``Q`` to exit from ``less`` and get back to the main menu.
 
 Run ebook-meta on the file
 """"""""""""""""""""""""""
