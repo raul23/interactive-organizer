@@ -43,7 +43,7 @@ in the new filename are colored red. Hence you can quickly see if the file was r
 
 |
 
-\* all ``na--`` shell scripts were a lot of fun to port but this one really is special since you interact more with it than the others
+\* all ``na--`` shell scripts were a lot of fun to port but this one really is special for its interactivity 
 
 `:star:` Other related Python projects based on ``ebook-tools``:
 
