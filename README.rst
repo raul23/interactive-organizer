@@ -377,8 +377,13 @@ you are asked to enter search terms or a new filename within single quotes.
 The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata`` which
 will be used to rename the given ebook file.
 
-`:warning:` the script distinguishes search terms and the new filename by considering anything within single quotes
+`:warning:` The script distinguishes search terms and the new filename by considering anything within single quotes
 as the new filename.
+
+.. image:: ./images/interactive_single_quotes.png
+   :target: ./images/interactive_single_quotes.png
+   :align: left
+   :alt: New filename within single quotes
 
 ``L``: read in terminal (with ``less``)
 """""""""""""""""""""""""""""""""""""""
