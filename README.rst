@@ -291,19 +291,31 @@ Read the saved metadata file
    
 Run shell in terminal
 """""""""""""""""""""
+To open a shell from within the Python script, press the key ``T`` or ````` (backtick):
+
 .. image:: ./images/shell.png
    :target: ./images/shell.png
    :align: left
    :alt: Run shell in terminal via Python script
-   
-Interactively reorganize the file
-"""""""""""""""""""""""""""""""""
-Read in terminal (with ``less``)
-""""""""""""""""""""""""""""""""
-Run ebook-meta on the file
-""""""""""""""""""""""""""
+
+To exit from the shell, press the keys ``Ctrl`` and ``D`` and you will get back to the main menu of the Python script:
+
+.. image:: ./images/shell_exit.png
+   :target: ./images/shell_exit.png
+   :align: left
+   :alt: Exit shell
+
 Skip file
 """""""""
+Interactively reorganize the file
+"""""""""""""""""""""""""""""""""
+
+Read in terminal (with ``less``)
+""""""""""""""""""""""""""""""""
+
+
+Run ebook-meta on the file
+""""""""""""""""""""""""""
 Eval code (change env vars)
 """""""""""""""""""""""""""
 
