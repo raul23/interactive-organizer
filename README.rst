@@ -283,8 +283,8 @@ Move to another folder
 """"""""""""""""""""""
 TODO
 
-Open file in external viewer 
-""""""""""""""""""""""""""""
+``O/Enter``: open file in external viewer 
+"""""""""""""""""""""""""""""""""""""""""
 Pressing the key ``O`` or ``Enter`` will open the given document in an external program which is the default one used
 by the OS for this particular file type. On Linux, this default program is called upon by ``xdg-open`` and on macOS, it is done
 by ``open``.
@@ -301,8 +301,8 @@ Thus you can check the content of the PDF to make sure that file was correctly r
    :align: left
    :alt: External program: iBooks
 
-Read the saved metadata file
-""""""""""""""""""""""""""""
+``C``: read the saved metadata file
+"""""""""""""""""""""""""""""""""""
 For each ebook that the script `organize_ebooks <https://github.com/raul23/organize-ebooks#explaining-some-of-the-options-arguments>`_ 
 (``keep-metadata`` option) renames and moves to another folder, a metadata file is created with data fetched from online 
 sources via calibre's ``fetch-ebook-metadata``.
@@ -314,8 +314,8 @@ This metadata file can be read from within the Python script by pressing the key
    :align: left
    :alt: Reading the saved metadata file
    
-Run shell in terminal
-"""""""""""""""""""""
+``T/```: run shell in terminal
+"""""""""""""""""""""""""""""""
 To open a shell from within the Python script, press the key ``T`` or ````` (backtick):
 
 .. image:: ./images/shell.png
@@ -332,8 +332,8 @@ To exit from the shell, press the keys ``Ctrl`` and ``D`` and you will get back 
    :align: left
    :alt: Exit shell
 
-Skip file
-"""""""""
+``S``: Skip file
+""""""""""""""""
 You can skip the current ebook file by pressing the key ``S``. If another file is found in the input folder, it
 will be shown in the main menu as the next file to be checked by the user:
 
@@ -342,11 +342,11 @@ will be shown in the main menu as the next file to be checked by the user:
    :align: left
    :alt: Skip file
 
-Interactively reorganize the file
-"""""""""""""""""""""""""""""""""
+``I/Backspace``: interactively reorganize the file
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Read in terminal (with ``less``)
-""""""""""""""""""""""""""""""""
+``L``: Read in terminal (with ``less``)
+"""""""""""""""""""""""""""""""""""""""
 To read the given document from the terminal, press the key ``L`` which will instruct the script to convert
 the file (e.g. pdf, djvu, epub) to text and show the content in the terminal through the program ``less``.
 
@@ -374,9 +374,9 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
 
 `:information_source:` You can then press ``Q`` to exit from ``less`` and get back to the main menu.
 
-Run ebook-meta on the file
-""""""""""""""""""""""""""
-Press the key ``?`` to show the metadata of a given document via calibre's ``ebook-meta``:
+``?``: Run ebook-meta on the file
+"""""""""""""""""""""""""""""""""
+Press ``?`` to show the metadata of a given document via calibre's ``ebook-meta``:
 
 .. image:: ./images/ebook_meta.png
    :target: ./images/ebook_meta.png
