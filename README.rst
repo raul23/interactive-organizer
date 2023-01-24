@@ -379,7 +379,7 @@ you are asked to enter search terms or a new filename within single quotes:
    :align: left
    :alt: 'i' option: enter search terms or a new filename
 
-`:warning:` As noted by the script, the metadata file will be deleted if it is to be found.
+`:warning:` When renaming the file, the associated metadata file will be deleted if it is to be found.
 
 The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata`` which
 will be used to rename the given ebook file. The file will be saved within the same input folder.
