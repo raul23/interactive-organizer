@@ -52,7 +52,7 @@ Dependencies
    when porting the shell script `interactive-organizer.sh <https://github.com/na--/ebook-tools/blob/master/interactive-organizer.sh>`_ et al. 
    to Python.
 
-This is the environment on which the Python package `interactive_organizer <./interactive_organizer/y>`_ was developed and tested:
+This is the environment on which the Python package `interactive_organizer <./interactive_organizer/>`_ was developed and tested:
 
 * **Platform:** macOS
 * **Python**: version **3.7**
