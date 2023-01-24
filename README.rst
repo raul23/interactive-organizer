@@ -176,6 +176,47 @@ Script options
 ==============
 List of options
 ---------------
+To display the script `organize_ebooks.py <./find_iorganize_ebooks/scripts/organize_ebooks.py>`_ list of options and their descriptions::
+
+   $ interactive_organizer -h
+   usage: interactive_organizer.py [OPTIONS] {folder_to_organize} -o {output_folder} [{output_folder}]
+
+   Interactively and manually organize ebook files quickly.
+
+   This script is based on the great ebook-tools written in shell by na-- (See https://github.com/na--/ebook-tools).
+
+   General options:
+     -h, --help                                    Show this help message and exit.
+     -v, --version                                 Show program's version number and exit.
+     -q, --quiet                                   Enable quiet mode, i.e. nothing will be printed.
+     --verbose                                     Print various debugging information, e.g. print traceback when there is an exception.
+     -d, --dry-run                                 If this is enabled, no file rename/move/symlink/etc. operations will actually be executed.
+     -s, --symlink-only                            Instead of moving the ebook files, create symbolic links to them.
+     --log-level {debug,info,warning,error}        Set logging level. (default: info)
+     --log-format {console,only_msg,simple}        Set logging formatter. (default: only_msg)
+
+   Interactive options:
+     --qm, --quick-mode                            This mode is useful when `organize_ebooks` was called with `--keep-metadata`. Ebooks that contain 
+                                                   all of the tokens from the old file name in the new one are directly moved to the default output 
+                                                   folder.
+     --token-min-length LENGTH                     When files and file metadata are parsed, they are split into words and ones shorter than this value 
+                                                   are ignored. By default, single and two character number and words are ignored. (default: 3)
+     --tokens-to-ignore TOKENS                     A regular expression that is matched against the filename/author/title tokens and matching tokens 
+                                                   are ignored. The default regular expression includes common words that probably hinder online 
+                                                   metadata searching like book, novel, series, volume and others, as well as probable publication 
+                                                   years like (so 1999 is ignored while 2033 is not).
+                                                   (default: ebook|book|novel|series|^ed(ition)?$|^vol(ume)?$|(19[0-9]|20[0-2])[0-9])
+
+   Input/Output options:
+     folder_to_organize                            Folder containing the ebook files that need to be organized.
+     -o, --output-folders [PATH [PATH ...]]        The different output folders to which you can quickly move ebook files. The first specified folder 
+                                                   is the default.
+     -c, --custom-move-base-dir PATH               A base directory in whose sub-folders files can more easily be moved during the interactive session 
+                                                   because of tab autocompletion. (default: )
+     -r, --restore-original-base-dir PATH          If you want to enable the option of restoring files to their original folders (or at least with the 
+                                                   same folder structure), set this as the base path. (default: )
+     --ome, --output-metadata-extension EXTENSION  This is the extension of the additional metadata file that is saved next to each newly renamed 
+                                                   file. (default: meta)
 
 Explaining some of the options/arguments
 ----------------------------------------
