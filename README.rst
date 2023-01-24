@@ -381,8 +381,8 @@ you are asked to enter search terms or a new filename within single quotes:
 
 `:information_source:` The old file path will be added into the new associated metadata file since the old metadata file is removed.
 
-The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata`` which
-will be used to rename the given ebook file. The file will be saved within the same input folder.
+The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata``. These fetched
+metadata will be used to rename the given ebook file. The file will be saved within the same input folder.
 
 `:warning:` The script distinguishes search terms and the new filename by considering anything within single quotes
 as the new filename.
