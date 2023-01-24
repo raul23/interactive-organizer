@@ -265,10 +265,12 @@ No metadata file found
 The user will be warned if an ebook file doesn't have an associated metadata file (as created by the script 
 `organize_ebooks <https://github.com/raul23/organize-ebooks#explaining-some-of-the-options-arguments>`_):
 
-.. image:: ./images/no_metadata.png
-   :target: ./images/no_metadata.png
+.. image:: ./images/no_metadata2.png
+   :target: ./images/no_metadata2.png
    :align: left
    :alt: User warned because no metadata file was found
+
+|
 
 You can still do all of the operations in the main menu except the `c <#read-the-saved-metadata-file>`_ option obviously: 
 
