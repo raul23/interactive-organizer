@@ -126,7 +126,12 @@ Installing the development version
 ==================================
 Install
 -------
+`:information_source:` 
 
+  It is recommended to install the Python package `interactive_organizer <./interactive_organizer/>`_ with **Docker** because the Docker
+  container has all the many `dependencies <#dependencies>`_ already installed along with the Python package ``interactive_organizer``. 
+  I also included the original bash shell scripts from `ebook-tools <https://github.com/na--/ebook-tools>`_ by `na-- <https://github.com/na-->`_.
+  
 Uninstall
 ---------
 
