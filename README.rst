@@ -332,7 +332,7 @@ To exit from the shell, press the keys ``Ctrl`` and ``D`` and you will get back 
    :align: left
    :alt: Exit shell
 
-``S``: Skip file
+``S``: skip file
 """"""""""""""""
 You can skip the current ebook file by pressing the key ``S``. If another file is found in the input folder, it
 will be shown in the main menu as the next file to be checked by the user:
@@ -345,7 +345,7 @@ will be shown in the main menu as the next file to be checked by the user:
 ``I/Backspace``: interactively reorganize the file
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-``L``: Read in terminal (with ``less``)
+``L``: read in terminal (with ``less``)
 """""""""""""""""""""""""""""""""""""""
 To read the given document from the terminal, press the key ``L`` which will instruct the script to convert
 the file (e.g. pdf, djvu, epub) to text and show the content in the terminal through the program ``less``.
@@ -374,7 +374,7 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
 
 `:information_source:` You can then press ``Q`` to exit from ``less`` and get back to the main menu.
 
-``?``: Run ebook-meta on the file
+``?``: run ebook-meta on the file
 """""""""""""""""""""""""""""""""
 Press ``?`` to show the metadata of a given document via calibre's ``ebook-meta``:
 
@@ -383,8 +383,8 @@ Press ``?`` to show the metadata of a given document via calibre's ``ebook-meta`
    :align: left
    :alt: Show book metadata with ebook-meta
 
-Eval code (change env vars)
-"""""""""""""""""""""""""""
+``E``: eval code (change env vars)
+""""""""""""""""""""""""""""""""""
 
 Example: manually organize a collection of documents
 ====================================================
