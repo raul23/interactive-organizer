@@ -393,11 +393,10 @@ the file (e.g. pdf, djvu, epub) to text and show the content in the terminal thr
 ``less`` will let you move easily through the content (page up and page down) and hence you can quickly take
 a peek at the content of the file to check if it was correctly named by the automatic script ``organize_ebooks``.
 
-Since the ebook in this example is an epub file, you will see some HTML data in its text content when displaying
-it with ``less``:
+Here is the text content of the epub document from the example as shown by ``less``:
 
-.. image:: ./images/less_epub.png
-   :target: ./images/less_epub.png
+.. image:: ./images/less_epub2.png
+   :target: ./images/less_epub2.png
    :align: left
    :alt: Text content from EPUB with less
 
@@ -412,7 +411,7 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
 
 |
 
-`:information_source:` You can then press ``Q`` to exit from ``less`` and get back to the main menu.
+`:information_source:` You can then press ``Q`` to exit from ``less`` and get back to the main menu of Python script.
 
 ``?``: run ebook-meta on the file
 """""""""""""""""""""""""""""""""
