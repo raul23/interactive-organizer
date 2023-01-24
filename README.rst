@@ -380,8 +380,8 @@ will be used to rename the given ebook file.
 `:warning:` The script distinguishes search terms and the new filename by considering anything within single quotes
 as the new filename.
 
-.. image:: ./images/interactive_single_quotes2.png
-   :target: ./images/interactive_single_quotes2.png
+.. image:: ./images/interactive_single_quotes.png
+   :target: ./images/interactive_single_quotes.png
    :align: left
    :alt: New filename within single quotes
 
