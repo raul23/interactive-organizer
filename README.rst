@@ -343,6 +343,13 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
 
 Run ebook-meta on the file
 """"""""""""""""""""""""""
+Press the key ``?`` to show the metadata of a given document via calibre's ``ebook-meta``:
+
+.. image:: ./images/ebook_meta.png
+   :target: ./images/ebook_meta.png
+   :align: left
+   :alt: Show book metadata with ebook-meta
+
 Eval code (change env vars)
 """""""""""""""""""""""""""
 
