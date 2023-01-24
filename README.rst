@@ -372,7 +372,14 @@ will be shown in the main menu as the next file to be checked by the user:
 ``I/Backspace``: interactively reorganize the file
 """"""""""""""""""""""""""""""""""""""""""""""""""
 This is the part of the menu where you will interact a lot with the script. When pressing the key ``I`` or ``Backspace``,
-you are asked to enter search terms or a new filename within single quotes.
+you are asked to enter search terms or a new filename within single quotes:
+
+.. image:: ./images/interactive_enter.png
+   :target: ./images/interactive_enter.png
+   :align: left
+   :alt: 'i' option: enter search terms or a new filename
+
+`:warning:` As noted by the script, the metadata file will be deleted if it is to be found.
 
 The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata`` which
 will be used to rename the given ebook file. The file will be saved within the same input folder.
