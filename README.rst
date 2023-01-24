@@ -294,7 +294,7 @@ The script warns you that the 'custom' folder is empty because the `basic comman
 the ``interactive_organizer`` script didn't use the option ``custom-move-base-dir`` (by default it is set to empty). Thus, 
 the new path starts from the current working directory. 
 
-The file in this example will be saved in the current working directory but you can also give a full path as it is shown 
+The file in this example will be saved relative to the current working directory but you can also give a full path as it is shown 
 in the next example.
 
 |
