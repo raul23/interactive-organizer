@@ -392,6 +392,27 @@ as the new filename.
    :align: left
    :alt: New filename within single quotes
 
+You could also enter a new ISBN as the search term and it will be used to rename the file:
+
+.. image:: ./images/interactive_new_isbn.png
+   :target: ./images/interactive_new_isbn.png
+   :align: left
+   :alt: ISBN as search term
+
+The script then fetches metadata based on the provided ISBN and displays the metadata that it found:
+
+.. image:: ./images/interactive_metadata.png
+   :target: ./images/interactive_metadata.png
+   :align: left
+   :alt: Fetch metadata based on provided ISBN
+
+It then asks if you want to use these metadata to rename the file and the associated metadata file:
+
+.. image:: ./images/interactive_rename.png
+   :target: ./images/interactive_rename.png
+   :align: left
+   :alt: Use fetched metadata to rename file
+
 ``L``: read in terminal (with ``less``)
 """""""""""""""""""""""""""""""""""""""
 To read the given document from the terminal, press the key ``L`` which will instruct the script to convert
