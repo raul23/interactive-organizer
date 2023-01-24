@@ -15,7 +15,7 @@ Interactively and manually organize ebook files quickly. It is a very interestin
 since you can manually check the files that were automatically renamed by `organized_ebooks <https://github.com/raul23/organize-ebooks>`_
 directly in the terminal. Many useful operations can be performed through the terminal for each ebook that you want to check:
 
-- read the file content (text conversion) from the terminal by leveragin the ``less`` command
+- read the file content (text conversion) from the terminal by leveraging the ``less`` command
 - read the book's metadata from the corresponding ``.meta`` file
 - provide the correct ISBN and the file will be renamed by fetching metadata from online sources
 - and so on!
