@@ -9,3 +9,38 @@ from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `n
    :local:
    :backlinks: top
  
+About
+=====
+
+Dependencies
+============
+
+Installing with Docker (Recommended) ⭐
+=======================================
+
+Installing the development version
+==================================
+Install
+-------
+
+Uninstall
+---------
+
+Script options
+==============
+List of options
+---------------
+
+Explaining some of the options/arguments
+----------------------------------------
+
+Script usage
+============
+
+Example: manually organize a collection of documents
+====================================================
+Through the script ``interactive_organizer.py``
+-----------------------------------------------
+
+Through the Python API
+----------------------
