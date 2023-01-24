@@ -406,7 +406,7 @@ The script then fetches metadata based on the provided ISBN and displays the met
    :align: left
    :alt: Fetch metadata based on provided ISBN
 
-It then asks if you want to use these metadata to rename the file and the associated metadata file:
+It then asks if you want to use these metadata to rename the ebook file and the associated metadata file:
 
 .. image:: ./images/interactive_rename.png
    :target: ./images/interactive_rename.png
