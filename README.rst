@@ -260,6 +260,23 @@ We will go through each of the options in the main menu using this simple comman
    filenames given to these books compared to those books whose ISBNs could be retrieved directly from their contents
    and successfully used to retrieve metadata from online sources.
 
+No metadata file found
+""""""""""""""""""""""
+The user will be warned if an ebook file doesn't have an associated metadata file (as created by the script 
+`organize_ebooks <https://github.com/raul23/organize-ebooks#explaining-some-of-the-options-arguments>`_):
+
+.. image:: ./images/no_metadata.png
+   :target: ./images/no_metadata.png
+   :align: left
+   :alt: User warned because no metadata file was found
+
+You can still do all of the operations in the main menu except the `c <#read-the-saved-metadata-file>`_ option obviously: 
+
+.. image:: ./images/no_metadata_c_option_fails.png
+   :target: ./images/no_metadata_c_option_fails.png
+   :align: left
+   :alt: 'c' option fails because no metadata
+
 Move to another folder
 """"""""""""""""""""""
 TODO
