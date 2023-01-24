@@ -31,7 +31,7 @@ What I also like is how ``na--`` had the great idea of highlighting the differen
 filename compared to the new one for a given renamed ebook. Similar words between both filenames are colored green and those missing
 in the new filename are colored red. Hence you can quickly see if the file was renamed correctly.
 
-* all ``na--`` shell scripts were a lot of fun to port but this one really is special since you interact more with it than the others
+\* all ``na--`` shell scripts were a lot of fun to port but this one really is special since you interact more with it than the others
 
 `:star:` Other related Python projects based on ``ebook-tools``:
 
