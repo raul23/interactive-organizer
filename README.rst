@@ -284,6 +284,12 @@ Thus you can check the content of the PDF to make sure that file was correctly r
 
 Read the saved metadata file
 """"""""""""""""""""""""""""
+For each ebook that the script `organize_ebooks <https://github.com/raul23/organize-ebooks#explaining-some-of-the-options-arguments>`_ 
+(``keep-metadata`` option) renames and moves to another folder, a metadata file is created with data fetched from online 
+sources via calibre's ``fetch-ebook-metadata``.
+
+This metadata file can be read from within the Python script by pressing the key ``C`` from the main menu:
+
 .. image:: ./images/read_saved_metadata_file.png
    :target: ./images/read_saved_metadata_file.png
    :align: left
