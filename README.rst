@@ -375,7 +375,7 @@ This is the part of the menu where you will interact a lot with the script. When
 you are asked to enter search terms or a new filename within single quotes.
 
 The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata`` which
-will be used to rename the given ebook file.
+will be used to rename the given ebook file. The file will be saved within the same input folder.
 
 `:warning:` The script distinguishes search terms and the new filename by considering anything within single quotes
 as the new filename.
