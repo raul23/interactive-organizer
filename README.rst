@@ -258,7 +258,7 @@ We will go through each of the options in the main menu using this simple comman
    fetched from online sources (e.g. Goodreads) are saved in a folder specified by the option `output-folder-uncertain 
    <https://github.com/raul23/organize-ebooks#list-of-options>`_. It means that the script is not highly confident about the
    filenames given to these books compared to those books whose ISBNs could be retrieved directly from their contents
-   and successfully used to retrieved metadata from online sources.
+   and successfully used to retrieve metadata from online sources.
 
 Move to another folder
 """"""""""""""""""""""
