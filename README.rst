@@ -315,6 +315,14 @@ To exit from the shell, press the keys ``Ctrl`` and ``D`` and you will get back 
 
 Skip file
 """""""""
+You can skip the current ebook file by pressing the key ``S``. If another file is found in the input folder, it
+will be shown in the main menu as the next file to be checked by the user:
+
+.. image:: ./images/skip_file.png
+   :target: ./images/skip_file.png
+   :align: left
+   :alt: Skip file
+
 Interactively reorganize the file
 """""""""""""""""""""""""""""""""
 
