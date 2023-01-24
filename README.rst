@@ -284,7 +284,11 @@ Thus you can check the content of the PDF to make sure that file was correctly r
 
 Read the saved metadata file
 """"""""""""""""""""""""""""
-
+.. image:: ./images/read_saved_metadata_file.png
+   :target: ./images/read_saved_metadata_file.png
+   :align: left
+   :alt: Reading the saved metadata file
+   
 Run shell in terminal
 """""""""""""""""""""
 Interactively reorganize the file
