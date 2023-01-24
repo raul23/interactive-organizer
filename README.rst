@@ -318,7 +318,7 @@ To read the given document from the terminal, press the key ``L`` which will ins
 the file (e.g. pdf, djvu, epub) to text and show the content in the terminal through the program ``less``.
 
 ``less`` will let you move easily through the content (page up and page down) and hence you can quickly take
-a peek at the content of file to check if it was correctly named by the automatic script ``organize_ebooks``.
+a peek at the content of the file to check if it was correctly named by the automatic script ``organize_ebooks``.
 
 Since the ebook in this example is an epub file, you will see some HTML data in its text content when displaying
 it with ``less``:
