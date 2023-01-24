@@ -316,7 +316,7 @@ Pressing the key ``O`` or ``Enter`` will open the given document in an external 
 by the OS for this particular file type. On Linux, this default program is called upon by ``xdg-open`` and on macOS, it is done
 by ``open``.
 
-Thus you can check the content of the PDF to make sure that file was correctly renamed. 
+Thus you can check the content of the PDF to make sure that the file was correctly renamed. 
 
 .. image:: ./images/open_viewer_program_menu.png
    :target: ./images/open_viewer_program_menu.png
