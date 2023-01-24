@@ -36,6 +36,8 @@ in the new filename are colored red. Hence you can quickly see if the file was r
    :align: left
    :alt: Highlight in the old filename showing differences with new filename
 
+|
+
 \* all ``na--`` shell scripts were a lot of fun to port but this one really is special since you interact more with it than the others
 
 `:star:` Other related Python projects based on ``ebook-tools``:
