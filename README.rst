@@ -379,7 +379,7 @@ you are asked to enter search terms or a new filename within single quotes:
    :align: left
    :alt: 'i' option: enter search terms or a new filename
 
-`:information_source:` The old file path will be added into the renamed associated metadata file.
+`:information_source:` The old file path will be added into the new associated metadata file since the old metadata file is removed.
 
 The search terms will be used to fetch new metadata from online sources via calibre's ``fetch-ebook-metadata`` which
 will be used to rename the given ebook file. The file will be saved within the same input folder.
