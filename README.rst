@@ -262,6 +262,8 @@ We will go through each of the options in the main menu using this simple comman
 
 Move to another folder
 """"""""""""""""""""""
+TODO
+
 Open file in external viewer 
 """"""""""""""""""""""""""""
 Pressing the key ``O`` or ``Enter`` will open the given document in an external program which is the default one used
