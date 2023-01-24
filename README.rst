@@ -279,8 +279,8 @@ You can still do all of the operations in the main menu except the `c <#read-the
    :align: left
    :alt: 'c' option fails because no metadata
 
-Move to another folder
-""""""""""""""""""""""
+``M``: move to another folder
+"""""""""""""""""""""""""""""
 TODO
 
 ``O/Enter``: open file in external viewer 
