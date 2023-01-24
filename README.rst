@@ -262,8 +262,8 @@ We will go through each of the options in the main menu using this simple comman
 
 `:star:`
 
-  When you are in a submenu (e.g. moving file with the ``m`` option) and want to go back to the main menu, you can 
-  do it by pressing the keys ``Ctrl`` and ``C``.
+  When you are in a submenu (e.g. moving file with the `m <#m-move-to-another-folder>`_ option) and want to go back 
+  to the main menu, you can do it by pressing the keys ``Ctrl`` and ``C``.
 
 No metadata file found
 """"""""""""""""""""""
