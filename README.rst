@@ -106,7 +106,7 @@ This is the environment on which the Python package `interactive_organizer <./in
 
 `:star:`
 
-  If you only install **calibre** among these dependencies, you can still have a
+  If you only install **calibre** among these dependencies, you can still have
   a functioning program that will enable you to manually organize your ebook collections
   with the script ``interactive-organizer``: 
   
