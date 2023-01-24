@@ -286,7 +286,7 @@ TODO
 Open file in external viewer 
 """"""""""""""""""""""""""""
 Pressing the key ``O`` or ``Enter`` will open the given document in an external program which is the default one used
-by the OS for this particular file type. On Linux, this program is called upon by ``xdg-open`` and on macOS, it is done
+by the OS for this particular file type. On Linux, this default program is called upon by ``xdg-open`` and on macOS, it is done
 by ``open``.
 
 Thus you can check the content of the PDF to make sure that file was correctly renamed. 
