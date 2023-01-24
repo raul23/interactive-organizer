@@ -86,7 +86,7 @@ This is the environment on which the Python package `interactive_organizer <./in
     - You need to softlink ``djvutxt`` in ``/user/local/bin`` (or add it in ``$PATH``)
 * `poppler <https://poppler.freedesktop.org/>`_: it includes ``pdftotext`` for converting *pdf* to *txt*
 
-`:information_source:` *epub* is converted to *txt* by using ``unzip -c {input_file}``
+`:information_source:` *epub* can be converted to *txt* by using ``unzip -c {input_file}``
 
 |
 
