@@ -23,6 +23,16 @@ directly in the terminal. Many useful operations can be performed through the te
 This is a Python port of `interactive-organizer.sh <https://github.com/na--/ebook-tools/blob/master/interactive-organizer.sh>`_ 
 from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `na-- <https://github.com/na-->`_.
 
+Personally, this is the shell script from ``na--`` that I had the most fun porting* to Python since it shows the powerful and interesting
+things you can do through the terminal and all via a Python script: you can even invoke a bash shell directly from the python script and then go 
+back to the Python script as if nothing happened! 
+
+What I also like is how ``na--`` had the great idea of highlighting the different differences in the old
+filename compared to the new one for a given renamed ebook. Similar words between both filenames are colored green and those missing
+in the new filename are colored red. Hence you can quickly see if the file was renamed correctly.
+
+* all ``na--`` shell scripts were a lot of fun to port but this one really is special since you interact more with it than the others
+
 `:star:` Other related Python projects based on ``ebook-tools``:
 
    - `convert-to-txt <https://github.com/raul23/convert-to-txt>`_: convert documents (pdf, djvu, epub, word) to txt
@@ -35,6 +45,7 @@ from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `n
 
 Dependencies
 ============
+
 
 Installing with Docker (Recommended) ⭐
 =======================================
