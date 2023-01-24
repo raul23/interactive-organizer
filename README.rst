@@ -27,7 +27,7 @@ Personally, this is the shell script from ``na--`` that I had the most fun porti
 things you can do through the terminal and all via a Python script: you can even invoke a bash shell directly from the python script and then go 
 back to the Python script as if nothing happened! 
 
-What I also like is how ``na--`` had the great idea of highlighting the different differences in the old
+What I also like is how ``na--`` had the great idea of highlighting the differences in the old
 filename compared to the new one for a given renamed ebook. Similar words between both filenames are colored green and those missing
 in the new filename are colored red. Hence you can quickly see if the file was renamed correctly.
 
