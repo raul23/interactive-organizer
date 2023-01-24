@@ -328,6 +328,8 @@ it with ``less``:
    :align: left
    :alt: Text content from EPUB with less
 
+|
+
 And here is a sample text content from a PDF file when viewing it with ``less``:
 
 .. image:: ./images/less_pdf.png
