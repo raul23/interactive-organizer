@@ -445,7 +445,7 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
 
 ``?``: run ebook-meta on the file
 """""""""""""""""""""""""""""""""
-Press ``?`` to show the metadata of a given document via calibre's ``ebook-meta``:
+Press ``?`` to show the metadata of the given document via calibre's ``ebook-meta``:
 
 .. image:: ./images/ebook_meta.png
    :target: ./images/ebook_meta.png
