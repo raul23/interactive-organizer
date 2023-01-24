@@ -470,6 +470,11 @@ You can provide a list of output folders that you can use to move your ebook fil
 
  $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output1 output2/ output3/
 
+.. image:: ./images/output_folders_menu.png
+   :target: ./images/output_folders_menu.png
+   :align: left
+   :alt: Output folders in the menu
+
 Custom base directory
 """""""""""""""""""""
 
