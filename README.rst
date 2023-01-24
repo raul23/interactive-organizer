@@ -291,6 +291,11 @@ Read the saved metadata file
    
 Run shell in terminal
 """""""""""""""""""""
+.. image:: ./images/shell.png
+   :target: ./images/shell.png
+   :align: left
+   :alt: Run shell in terminal via Python script
+   
 Interactively reorganize the file
 """""""""""""""""""""""""""""""""
 Read in terminal (with ``less``)
