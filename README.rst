@@ -441,7 +441,7 @@ And here is a sample text content from a PDF file when viewing it with ``less``:
 
 |
 
-`:information_source:` You can then press ``Q`` to exit from ``less`` and get back to the main menu of Python script.
+`:information_source:` You can then press ``Q`` to exit from ``less`` and get back to the main menu of the Python script.
 
 ``?``: run ebook-meta on the file
 """""""""""""""""""""""""""""""""
