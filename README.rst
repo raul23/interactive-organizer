@@ -300,8 +300,8 @@ To open a shell from within the Python script, press the key ``T`` or ````` (bac
 
 To exit from the shell, press the keys ``Ctrl`` and ``D`` and you will get back to the main menu of the Python script:
 
-.. image:: ./images/shell_exit.png
-   :target: ./images/shell_exit.png
+.. image:: ./images/shell_exit2.png
+   :target: ./images/shell_exit2.png
    :align: left
    :alt: Exit shell
 
