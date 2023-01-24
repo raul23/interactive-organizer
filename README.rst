@@ -281,7 +281,31 @@ You can still do all of the operations in the main menu except the `c <#read-the
 
 ``M``: move to another folder
 """""""""""""""""""""""""""""
-TODO
+Press the key ``M`` to move the current ebook file to another folder:
+
+.. image:: ./images/move_file2.png
+   :target: ./images/move_file2.png
+   :align: left
+   :alt: Entering the new path where the file will be moved
+
+`:warning:` As noted by the script, the metadata file will be deleted if it is to be found.
+
+The script warns you that the 'custom' folder is empty because the `basic command <#basic-command>`_ that was used to run 
+the ``interactive_organizer`` script didn't use the option ``custom-move-base-dir`` (by default it is set to empty). Thus, 
+the new path starts from the current working directory. 
+
+The file in this example will be saved in the current working directory but you can also give a full path as it is shown 
+in the next example.
+
+|
+
+The script will ask you to enter the new path where you want the ebook file to be moved. It autocompletes
+the path that you enter so that it is easier for you to navigate through your filesystem:
+
+.. image:: ./images/move_file_autocompletes.png
+   :target: ./images/move_file_autocompletes.png
+   :align: left
+   :alt: Autocompleting your new path
 
 ``O/Enter``: open file in external viewer 
 """""""""""""""""""""""""""""""""""""""""
