@@ -108,7 +108,7 @@ This is the environment on which the Python package `interactive_organizer <./in
 
   If you only install **calibre** among these dependencies, you can still have
   a functioning program that will enable you to manually organize your ebook collections
-  with the script ``interactive-organizer``: 
+  with the script ``interactive_organizer``: 
   
   * fetching metadata from online sources (very helpful feature for this particular script) 
     will work: by `default 
