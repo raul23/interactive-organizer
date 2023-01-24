@@ -121,19 +121,56 @@ This is the environment on which the Python package `interactive_organizer <./in
 
 Installing with Docker (Recommended) ⭐
 =======================================
-
-Installing the development version
-==================================
-Install
--------
 `:information_source:` 
 
   It is recommended to install the Python package `interactive_organizer <./interactive_organizer/>`_ with **Docker** because the Docker
   container has all the many `dependencies <#dependencies>`_ already installed along with the Python package ``interactive_organizer``. 
   I also included the original bash shell scripts from `ebook-tools <https://github.com/na--/ebook-tools>`_ by `na-- <https://github.com/na-->`_.
+
+TODO
+
+Installing the development version
+==================================
+Install
+-------
+`:warning:` 
+
+   You can ignore this section and go straight to pulling the `Docker image <#installing-with-docker-recommended>`_ which contains all the 
+   required dependencies and the Python package ``interactive_organizer`` already installed. This section is for installing the bleeding-edge
+   version of the Python package ``interactive_organizer`` after you have installed yourself the many `dependencies <#dependencies>`_.
   
+After you have installed the `dependencies <#dependencies>`_, you can then install the development (bleeding-edge) 
+version of the package `interactive_organizer <./interactive_organizer/>`_:
+
+.. code-block:: bash
+ 
+   pip install git+https://github.com/raul23/interactive-organizer#egg=interactive-organizer
+ 
+**NOTE:** the development version has the latest features 
+ 
+**Test installation**
+
+1. Test your installation by importing ``interactive_organizer`` and printing its
+   version:
+   
+   .. code-block:: bash
+
+      python -c "import interactive_organizer; print(interactive_organizer.__version__)"
+
+2. You can also test that you have access to the ``interactive_organizer.py`` script by
+   showing the program's version:
+
+   .. code-block:: bash
+
+      interactive_organizer --version
+
 Uninstall
 ---------
+To uninstall the development version of the package `interactive_organizer <./interactive_organizer/>`_:
+
+.. code-block:: bash
+
+   pip uninstall interactive_organizer
 
 Script options
 ==============
