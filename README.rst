@@ -485,7 +485,7 @@ option `-o <#list-of-options>`_::
    :align: left
    :alt: Output folders in the menu
 
-In the main menu, we can see at the beginning of possible actions three options related to the output folders. 
+In the main menu, we can see at the beginning of possible actions four options related to the output folders. 
 The first output folder specified in the option ``-o`` is the default one and given the number 0 as label. The other
 output folders in the example command line are labeled with 1, 2 and 3.
 
