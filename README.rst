@@ -299,7 +299,7 @@ The file in this example will be saved relative to the current working directory
 
 |
 
-The script autocompletes the path that you enter so that it is easier for you to navigate through your filesystem:
+By using tab, the script autocompletes the path that you enter so that it is easier for you to navigate through your filesystem:
 
 .. image:: ./images/move_file_autocompletes.png
    :target: ./images/move_file_autocompletes.png
@@ -488,7 +488,7 @@ Custom base directory: ``-c, --custom-move-base-dir``
 
 Restore files: ``-r, --restore-original-base-dir`` 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-You can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
+We can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
 the command-line `-r <#list-of-options>`_::
 
  interactive_organizer ~/test/test_organize/commons-books/uncertain/ -r restore/
@@ -497,6 +497,24 @@ the command-line `-r <#list-of-options>`_::
    :target: ./images/restore_menu.png
    :align: left
    :alt: Menu: Restore file option
+
+The script then asks if we want to modify the file path that will be used for saving the restored ebook file:
+
+.. image:: ./images/restore_ask.png
+   :target: ./images/restore_ask.png
+   :align: left
+   :alt: Menu: Restore file option
+
+`:warning:` The associated metadata file will be deleted.
+
+By using tab, the script autocompletes the path that we enter so that it is easier to navigate through the filesystem:
+
+.. image:: ./images/restore_autocomplete.png
+   :target: ./images/restore_autocomplete.png
+   :align: left
+   :alt: Restore: tab autocomplete
+
+In this example, the file will be restored to the original folder structure by saving it relative to the specifed base path (``restore/``).
 
 Example: manually organize a collection of documents
 ====================================================
