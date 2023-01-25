@@ -466,7 +466,8 @@ Other commands
 --------------
 Ouput folders
 """""""""""""
-We can provide a list of output folders that we can use to move ebook and metadata files between them with the option `-o <#list-of-options>`_::
+We can provide a list of output folders that we can use to move ebook and metadata files between them with the command-line 
+option `-o <#list-of-options>`_::
 
  $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output0 output1 output2/ output3/
 
@@ -492,7 +493,7 @@ Custom base directory
 Restore files 
 """""""""""""
 You can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
-the `-r <option>`_::
+the command-line `-r <option>`_::
 
  interactive_organizer ~/test/test_organize/commons-books/uncertain/ -r restore/
 
