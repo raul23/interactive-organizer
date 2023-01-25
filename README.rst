@@ -515,7 +515,9 @@ the ``-c`` command line option::
    :target: ./images/custom_menu.png
    :align: left
    :alt: Menu: custom folder path
-   
+
+|
+
 The script asks to enter the file path where the ebook file will be moved. We can see that this
 file path starts from the custom base folder we provided to the script (``custom/``).
 
