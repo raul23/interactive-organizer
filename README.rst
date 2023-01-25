@@ -460,7 +460,7 @@ Command-line options
 --------------------
 Quick mode: ``--qm, --quick-mode``
 """"""""""""""""""""""""""""""""""
-If the new filename for a given ebook file is not missing any of the tokens from the old filename, the ebook
+If the new filename for a given ebook file is not missing any words from the old filename, the ebook
 file can be quickly moved to a user specified folder by using the flag ``--qm`` which enables quick mode::
 
  $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output1/ --qm
