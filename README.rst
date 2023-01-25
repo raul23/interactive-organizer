@@ -479,7 +479,7 @@ In the main menu, we can see at the beginning of possible actions three options 
 The first output folder specified in the option ``-o`` is the default one and given the number 0 as label. The other
 output folders in the example command line are labeled with 1, 2 and 3.
 
-If we type 0, the given ebook file along with the associated metadata file are moved to the ``output0/`` folder:
+If we type ``0``, the given ebook file along with the associated metadata file are moved to the ``output0/`` folder:
 
 .. image:: ./images/output_folders_default_folder.png
    :target: ./images/output_folders_default_folder.png
