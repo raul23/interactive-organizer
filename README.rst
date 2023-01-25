@@ -470,8 +470,8 @@ We can provide a list of output folders that we can use to move ebook and metada
 
  $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output0 output1 output2/ output3/
 
-.. image:: ./images/output_folders_menu.png
-   :target: ./images/output_folders_menu.png
+.. image:: ./images/output_folders_menu2.png
+   :target: ./images/output_folders_menu2.png
    :align: left
    :alt: Output folders in the menu
 
