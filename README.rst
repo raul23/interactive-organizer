@@ -524,6 +524,9 @@ file path starts from the custom base folder we provided to the script (``custom
    :align: left
    :alt: Provide file path
 
+We can check that the file was moved to the custom base directory by calling a shell
+from the script (see the menu option `t <#t-run-shell-in-terminal>`_):
+
 .. image:: ./images/custom_file_path2.png
    :target: ./images/custom_file_path2.png
    :align: left
