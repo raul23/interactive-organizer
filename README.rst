@@ -498,7 +498,7 @@ If we type ``0``, the given ebook file along with the associated metadata file a
 
 Custom base directory: ``-c, --custom-move-base-dir``
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-When using the menu option `-m <#m-move-to-another-folder>`_, you can provide a custom base folder to the script via 
+When using the menu option `m <#m-move-to-another-folder>`_, you can provide a custom base folder to the script via 
 the ``-c`` command line option::
 
  $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -c custom/
