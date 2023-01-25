@@ -244,7 +244,7 @@ books::
    :align: left
    :alt: Basic command: main menu
 
-We will go through each of the options in the main menu using this simple command as a starter.
+We will go through each of the options in the menu using this simple command as a starter.
 
 `:information_source:` 
 
