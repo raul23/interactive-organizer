@@ -4,8 +4,8 @@ interactive-organizer
 Interactively and manually organize ebook files quickly. This is a Python port of `interactive-organizer.sh <https://github.com/na--/ebook-tools/blob/master/interactive-organizer.sh>`_ 
 from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `na-- <https://github.com/na-->`_.
 
-.. image:: ./images/highlight_old_name.png
-   :target: ./images/highlight_old_name.png
+.. image:: ./images/basic_command_menu.png
+   :target: ./images/basic_command_menu.png
    :align: left
    :alt: Highlight in the old filename showing differences with new filename
 
@@ -36,8 +36,8 @@ What I also like is how ``na--`` had the great idea of highlighting the differen
 filename compared to the new one for a given renamed ebook. Similar words between both filenames are colored green and those missing
 in the new filename are colored red. Hence you can quickly see if the file was renamed correctly.
 
-.. image:: ./images/highlight_old_name.png
-   :target: ./images/highlight_old_name.png
+.. image:: ./images/basic_command_menu.png
+   :target: ./images/basic_command_menu.png
    :align: left
    :alt: Highlight in the old filename showing differences with new filename
 
