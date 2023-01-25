@@ -460,6 +460,9 @@ and new filenames when showing the similar and different tokens between both str
 
 Command-line options
 --------------------
+Quick mode: ``--qm, --quick-mode``
+""""""""""""""""""""""""""""""""""
+
 Output folders: ``-o, --output-folders``
 """"""""""""""""""""""""""""""""""""""""
 We can provide a list of output folders that we can use to move ebook and metadata files between them with the command-line 
