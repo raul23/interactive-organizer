@@ -191,7 +191,7 @@ Script's list of options
 To display `organize_ebooks.py <./find_iorganize_ebooks/scripts/organize_ebooks.py>`_'s list of options and their descriptions::
 
    $ interactive_organizer -h
-   usage: interactive_organizer.py [OPTIONS] {folder_to_organize} -o {output_folder} [{output_folder}]
+   usage: interactive_organizer [OPTIONS] {folder_to_organize} -o {output_folder} [{output_folder}]
 
    Interactively and manually organize ebook files quickly.
 
@@ -563,6 +563,32 @@ Example: manually organize a collection of documents
 ====================================================
 Through the script ``interactive_organizer.py``
 -----------------------------------------------
+To manually organize your ebooks, you can start with the following basic command::
+ 
+ $ interactive_organizer ~/uncertain/
+ 
+The only required parameter is the input folder that you want to manually check. This input
+folder can be for instance the folder containing uncertain ebooks as renamed by the script 
+`organize_ebooks <https://github.com/raul23/organize-ebooks>`_.
+
+These ebooks and their associated metadata files can be checked to validate their renaming. In the main
+menu, for a given ebook file analyzed you will see the old name colored as such:
+
+- red for those words missing in the new filename
+- green for those words found in the new filename
+- blue for the date
+
+.. image:: ./images/basic_command_menu.png
+   :target: ./images/basic_command_menu.png
+   :align: left
+   :alt: Highlight in the old filename showing differences with new filename
+
+Hence, you can quickly inspect how good of a job the script ``organize_ebooks`` did with the
+renaming of an ebook: if there are many green words and very few or no red words, then you can
+`move the file <#m-move-to-another-folder>`_ to another folder of your choice.
+
+Sometimes you can win the jackpot and have no missing words! If you used the flag ``--qm``
+and specified an output folder, then the file will be `quickly moved <#quick-mode-qm-quick-mode>`_ to the desired folder.
 
 Through the Python API
 ----------------------
