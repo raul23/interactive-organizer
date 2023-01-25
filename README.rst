@@ -509,6 +509,8 @@ The script then asks if we want to modify the file path that will be used for sa
 
 `:warning:` The associated metadata file will be deleted if it exists.
 
+In this example, the file will be restored to the original folder structure by saving it relative to the specifed base path (``restore/``).
+
 |
 
 By using tab, the script autocompletes the path that we enter so that it is easier to navigate through the filesystem:
@@ -517,8 +519,6 @@ By using tab, the script autocompletes the path that we enter so that it is easi
    :target: ./images/restore_autocomplete.png
    :align: left
    :alt: Restore: tab autocomplete
-
-In this example, the file will be restored to the original folder structure by saving it relative to the specifed base path (``restore/``).
 
 Example: manually organize a collection of documents
 ====================================================
