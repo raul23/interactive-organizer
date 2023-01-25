@@ -493,7 +493,7 @@ Custom base directory
 Restore files 
 """""""""""""
 You can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
-the command-line `-r <option>`_::
+the command-line `-r <#list-of-options>`_::
 
  interactive_organizer ~/test/test_organize/commons-books/uncertain/ -r restore/
 
