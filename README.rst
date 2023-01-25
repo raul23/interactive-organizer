@@ -578,9 +578,9 @@ By using tab, the script autocompletes the path that we enter so that it is easi
    :align: left
    :alt: Restore: tab autocomplete
 
-Example: manually organize a collection of documents
-====================================================
-To manually organize your ebooks, you can start with the following basic command::
+Example: interactively organize a collection of documents
+=========================================================
+To interactively organize your ebooks, you can start with the following basic command::
  
  $ interactive_organizer ~/uncertain/
  
