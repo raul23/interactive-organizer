@@ -22,9 +22,9 @@ you can interactively and manually organize ebook files quickly. It allows you t
 `organized_ebooks <https://github.com/raul23/organize-ebooks>`_ directly in the terminal. Many useful operations can be 
 performed through the terminal for each ebook that you want to check:
 
-- read the file content (text conversion) from the terminal by leveraging the ``less`` command
-- read the book's metadata from the corresponding ``.meta`` file
-- provide another ISBN and the file will be renamed by fetching metadata from online sources
+- read the file content (text conversion) from the terminal by leveraging the ``less`` command,
+- read the book's metadata from the corresponding ``.meta`` file,
+- provide another ISBN that will be used to fetch metadata from online sources and use these metadata to rename the file,
 - and so on!
 
 This is a Python port of `interactive-organizer.sh <https://github.com/na--/ebook-tools/blob/master/interactive-organizer.sh>`_ 
