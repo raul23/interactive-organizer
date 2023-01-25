@@ -16,8 +16,8 @@ from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `n
  
 About
 =====
-Interactively and manually organize ebook files quickly. It is a very interesting script developed originally by `na-- <https://github.com/na-->`_
-since you can manually check the files that were automatically renamed by `organized_ebooks <https://github.com/raul23/organize-ebooks>`_
+Interactively and manually organize ebook files quickly. Originally it was a shell script developed by `na-- <https://github.com/na-->`_
+and it allows you to manually check the files that were automatically renamed by `organized_ebooks <https://github.com/raul23/organize-ebooks>`_
 directly in the terminal. Many useful operations can be performed through the terminal for each ebook that you want to check:
 
 - read the file content (text conversion) from the terminal by leveraging the ``less`` command
