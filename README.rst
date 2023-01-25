@@ -23,7 +23,7 @@ directly in the terminal. Many useful operations can be performed through the te
 
 - read the file content (text conversion) from the terminal by leveraging the ``less`` command
 - read the book's metadata from the corresponding ``.meta`` file
-- provide the correct ISBN and the file will be renamed by fetching metadata from online sources
+- provide another ISBN and the file will be renamed by fetching metadata from online sources
 - and so on!
 
 This is a Python port of `interactive-organizer.sh <https://github.com/na--/ebook-tools/blob/master/interactive-organizer.sh>`_ 
