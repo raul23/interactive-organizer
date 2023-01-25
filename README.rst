@@ -466,14 +466,25 @@ Other commands
 --------------
 Ouput folders
 """""""""""""
-You can provide a list of output folders that you can use to move your ebook files between them::
+We can provide a list of output folders that we can use to move ebook and metadata files between them with the option `-o <#list-of-options>`_::
 
- $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output1 output2/ output3/
+ $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output0 output1 output2/ output3/
 
 .. image:: ./images/output_folders_menu.png
    :target: ./images/output_folders_menu.png
    :align: left
    :alt: Output folders in the menu
+
+In the main menu, we can see at the beginning of possible actions three options related to the output folders. 
+The first output folder specified in the option ``-o`` is the default one and given the number 0 as label. The other
+output folders in the example command line are labeled with 1, 2 and 3.
+
+If we type 0, the given ebook file along with the associated metadata file are moved to the ``output0/`` folder:
+
+.. image:: ./images/output_folders_default_folder.png
+   :target: ./images/output_folders_default_folder.png
+   :align: left
+   :alt: Moving file and metadata to output0/
 
 Custom base directory
 """""""""""""""""""""
