@@ -509,6 +509,8 @@ The script then asks if we want to modify the file path that will be used for sa
 
 `:warning:` The associated metadata file will be deleted.
 
+|
+
 By using tab, the script autocompletes the path that we enter so that it is easier to navigate through the filesystem:
 
 .. image:: ./images/restore_autocomplete.png
