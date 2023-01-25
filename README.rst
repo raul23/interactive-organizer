@@ -70,6 +70,10 @@ This is the environment on which the Python package `interactive_organizer <./in
 
 * **Platform:** macOS
 * **Python**: version **3.7**
+* `organize_ebooks <https://github.com/raul23/organize-ebooks>`_: Python package whose library has lots of useful functions
+  for developing ebook organizers/managers. It is a Python port of `organize-ebooks.sh 
+  <https://github.com/na--/ebook-tools/blob/master/organize-ebooks.sh>`_ 
+  from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `na-- <https://github.com/na-->`_.
 * `textutil <https://ss64.com/osx/textutil.html>`_ or `catdoc <http://www.wagner.pp.ru/~vitus/software/catdoc/>`_: for converting *doc* to *txt*
 
   **NOTE:** On macOS, you don't need ``catdoc`` since it has the built-in ``textutil``
