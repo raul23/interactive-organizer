@@ -580,8 +580,6 @@ By using tab, the script autocompletes the path that we enter so that it is easi
 
 Example: manually organize a collection of documents
 ====================================================
-Through the script ``interactive_organizer.py``
------------------------------------------------
 To manually organize your ebooks, you can start with the following basic command::
  
  $ interactive_organizer ~/uncertain/
@@ -608,6 +606,3 @@ renaming of an ebook: if there are many green words and very few or no red words
 
 If no missing words were detected, the file can be `quickly moved <#quick-mode-qm-quick-mode>`_ to an output folder if the 
 flag ``--qm`` (quick mode enabled) was used.
-
-Through the Python API
-----------------------
