@@ -1,1 +1,1 @@
-organize-ebooks@git+https://github.com/raul23/organize-ebook#egg=organize-ebook
+organize-ebooks@git+https://github.com/raul23/organize-ebooks#egg=organize-ebooks
