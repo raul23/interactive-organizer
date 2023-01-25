@@ -207,6 +207,12 @@ To display `organize_ebooks.py <./find_iorganize_ebooks/scripts/organize_ebooks.
      --log-level {debug,info,warning,error}        Set logging level. (default: info)
      --log-format {console,only_msg,simple}        Set logging formatter. (default: only_msg)
 
+   Convert-to-txt options:
+     --djvu {djvutxt,ebook-convert}                Set the conversion method for djvu documents. (default: djvutxt)
+     --epub {epubtxt,ebook-convert}                Set the conversion method for epub documents. (default: ebook-convert)
+     --msword {catdoc,textutil,ebook-convert}      Set the conversion method for epub documents. (default: textutil)
+     --pdf {pdftotext,ebook-convert}               Set the conversion method for pdf documents. (default: pdftotext)
+
    Interactive options:
      --qm, --quick-mode                            This mode is useful when `organize_ebooks` was called with `--keep-metadata`. Ebooks that contain 
                                                    all of the tokens from the old file name in the new one are directly moved to the default output 
