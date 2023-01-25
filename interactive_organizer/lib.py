@@ -227,8 +227,8 @@ class InteractiveOrganizer:
                 f"{bold('r')}", normalize("NFKC", f"{self.restore_original_base_dir.strip('/')}/{old_path}")))
         # TODO: use better formatting than relying on tabs
         # NOTE: SyntaxError: f-string expression part cannot include a backslash
-        logger.info(" {})\tMove to another folder\t\t\t| {})\tInteractively reorganize the file".format(
-            f"{bold('m/tab$')}", f"{bold('i/bs$')}"))
+        logger.info(" {})\t\tMove to another folder\t\t\t| {})\t\tInteractively reorganize the file".format(
+            f"{bold('m/tab')}", f"{bold('i/bs')}"))
         logger.info(" {})\t\tOpen file in external viewer\t\t| {})\t\tRead in terminal".format(
             f"{bold('o/ent')}", f"{bold('l')}"))
         logger.info(" {})\t\tRead the saved metadata file\t\t| {})\t\tRun ebook-meta on the file".format(
