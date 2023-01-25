@@ -184,8 +184,8 @@ To uninstall the development version of the package `interactive_organizer <./in
 
    pip uninstall interactive_organizer
 
-Script options
-==============
+Script's list of options
+========================
 To display the script `organize_ebooks.py <./find_iorganize_ebooks/scripts/organize_ebooks.py>`_ list of options and their descriptions::
 
    $ interactive_organizer -h
