@@ -468,8 +468,8 @@ file can be quickly moved to a user specified folder by using the flag ``--qm`` 
 `:warning:` It is important to specify at least an output folder with the option ``-o`` since it is the first 
 of the output folders that will be used as the location where the ebook file will be saved.
 
-.. image:: ./images/quick_mode_file_moved.png
-   :target: ./images/quick_mode_file_moved.png
+.. image:: ./images/quick_mode_file_moved2.png
+   :target: ./images/quick_mode_file_moved2.png
    :align: left
    :alt: Quick mode moves file to output folder
 
