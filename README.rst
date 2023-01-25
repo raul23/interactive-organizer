@@ -506,7 +506,7 @@ If we type ``0``, the given ebook file along with the associated metadata file a
 
 Custom base directory: ``-c, --custom-move-base-dir``
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-When using the menu option `m <#m-move-to-another-folder>`_, you can provide a custom base folder to the script via 
+When using the menu option `m <#m-move-to-another-folder>`_, we can provide a custom base folder to the script via 
 the ``-c`` command line option::
 
  $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -c custom/
@@ -524,15 +524,15 @@ file path starts from the custom base folder we provided to the script (``custom
    :align: left
    :alt: Provide file path
 
+`:warning:` As the script warns, the corresponding metadata file will be removed.
+
 We can check that the file was moved to the custom base directory by calling a shell
-from the script (see the menu option `t <#t-run-shell-in-terminal>`_):
+from the Python script (see the menu option `t <#t-run-shell-in-terminal>`_):
 
 .. image:: ./images/custom_file_path2.png
    :target: ./images/custom_file_path2.png
    :align: left
    :alt: Check file was moved
-
-`:warning:` As the script warns, the corresponding metadata file will be removed.
 
 Restore files: ``-r, --restore-original-base-dir`` 
 """"""""""""""""""""""""""""""""""""""""""""""""""
