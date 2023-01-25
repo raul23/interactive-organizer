@@ -571,7 +571,7 @@ The only required parameter is the input folder that you want to manually check.
 folder can be for instance the folder containing uncertain ebooks as renamed by the script 
 `organize_ebooks <https://github.com/raul23/organize-ebooks>`_.
 
-These ebooks and their associated metadata files can be checked to validate their renaming. In the main
+These ebooks and their associated metadata files can be checked to validate their filenames. In the main
 menu, for a given ebook file analyzed you will see the old name colored as such:
 
 - red for those words missing in the new filename
