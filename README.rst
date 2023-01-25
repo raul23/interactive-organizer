@@ -449,7 +449,7 @@ Press ``?`` to show the metadata of the given document via calibre's ``ebook-met
 ``E``: eval code (change env vars)
 """"""""""""""""""""""""""""""""""
 Press the key ``E`` to modify the regex used for ignoring tokens in the old filename when comparing the old
-and new filenames when showing the similar and different tokens between both strings:
+and new filenames:
 
 .. image:: ./images/eval.png
    :target: ./images/eval.png
