@@ -18,7 +18,9 @@ from textwrap import wrap
 from unicodedata import combining, normalize
 
 from organize_ebooks.lib import *
+# TODO
 from interactive_organizer import __version__
+# __version__ = '0.1.0'
 
 # import ipdb
 
@@ -41,6 +43,13 @@ SYMLINK_ONLY = False
 # ===============
 LOGGING_FORMATTER = 'only_msg'
 LOGGING_LEVEL = 'info'
+
+# Convert-to-txt options
+# ======================
+DJVU_CONVERT_METHOD = 'djvutxt'
+EPUB_CONVERT_METHOD = 'ebook-convert'
+MSWORD_CONVERT_METHOD = 'textutil'
+PDF_CONVERT_METHOD = 'pdftotext'
 
 # Interactive options
 # ===================
@@ -91,7 +100,13 @@ def open_document(file_path):
     return convert_result_from_shell_cmd(result)
 
 
-def open_with_less(file_path, isbn_direct_files=ISBN_DIRECT_FILES):
+def open_with_less(file_path, isbn_direct_files=ISBN_DIRECT_FILES,
+                   djvu_convert_method=DJVU_CONVERT_METHOD,
+                   epub_convert_method=EPUB_CONVERT_METHOD,
+                   msword_convert_method=MSWORD_CONVERT_METHOD,
+                   pdf_convert_method=PDF_CONVERT_METHOD, **kwargs):
+    func_params = locals().copy()
+    func_params.pop('file_path')
     mime_type = get_mime_type(file_path)
     logger.info(f"Reading '{file_path}' ({mime_type}) with less...")
     if mime_type and re.match(isbn_direct_files, mime_type):
@@ -101,7 +116,7 @@ def open_with_less(file_path, isbn_direct_files=ISBN_DIRECT_FILES):
     tmp_file_txt = tempfile.mkstemp(suffix='.txt')[1]
     logger.debug(f"Converting ebook to text format...")
     logger.debug(f"Temp file: {tmp_file_txt}")
-    result = convert_to_txt(file_path, tmp_file_txt, mime_type)
+    result = convert_to_txt(file_path, tmp_file_txt, mime_type, **func_params)
     if result.returncode == 0:
         logger.debug('Conversion to text was successful')
         # TODO: check returncode or stderr
@@ -145,18 +160,31 @@ def rlinput(prompt, prefill=''):
 
 class InteractiveOrganizer:
     def __init__(self):
-        self.folder_to_organize = None
-        self.output_folders = []
         self.dry_run = DRY_RUN
         self.symlink_only = SYMLINK_ONLY
+        # ======================
+        # Convert-to-txt options
+        # ======================
+        self.djvu_convert_method = DJVU_CONVERT_METHOD
+        self.epub_convert_method = EPUB_CONVERT_METHOD
+        self.msword_convert_method = MSWORD_CONVERT_METHOD
+        self.pdf_convert_method = PDF_CONVERT_METHOD
+        # ===================
+        # Interactive options
+        # ===================
         self.quick_mode = QUICK_MODE
-        self.custom_move_base_dir = CUSTOM_MOVE_BASE_DIR
-        self.restore_original_base_dir = RESTORE_ORIGINAL_BASE_DIR
-        # self.diacritic_difference_maskings = DIACRITIC_DIFFERENCE_MASKINGS
-        # self.match_partial_words = MATCH_PARTIAL_WORDS
-        self.output_metadata_extension = OUTPUT_METADATA_EXTENSION
         self.token_min_length = TOKEN_MIN_LENGTH
         self.tokens_to_ignore = TOKENS_TO_IGNORE
+        # self.diacritic_difference_maskings = DIACRITIC_DIFFERENCE_MASKINGS
+        # self.match_partial_words = MATCH_PARTIAL_WORDS
+        # ====================
+        # Input/Output options
+        # ====================
+        self.folder_to_organize = None
+        self.output_folders = []
+        self.custom_move_base_dir = CUSTOM_MOVE_BASE_DIR
+        self.restore_original_base_dir = RESTORE_ORIGINAL_BASE_DIR
+        self.output_metadata_extension = OUTPUT_METADATA_EXTENSION
 
     @staticmethod
     def _color_tokens_in_string(s, tokens, color='red'):
@@ -473,7 +501,7 @@ class InteractiveOrganizer:
                     # TODO: result.stderr? if returncode!=0?
                     logger.debug(f'result: {result}')
                 elif opt in ['l']:
-                    open_with_less(file_path)
+                    open_with_less(file_path, **self.__dict__)
                 elif opt in ['c']:
                     if Path(metadata_path).exists():
                         with open(metadata_path, 'r') as f:
@@ -569,4 +597,3 @@ class InteractiveOrganizer:
 
 
 organizer = InteractiveOrganizer()
-
