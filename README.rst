@@ -575,7 +575,7 @@ These ebooks and their associated metadata files can be checked to validate the 
 menu and for a given ebook file analyzed, you will see the old filename colored as such:
 
 - red for those words missing in the new filename
-- green for those words found in the new filename
+- green for those words also found in the new filename
 - blue for the date
 
 .. image:: ./images/basic_command_menu.png
