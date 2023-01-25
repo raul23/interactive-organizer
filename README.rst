@@ -507,7 +507,7 @@ The script then asks if we want to modify the file path that will be used for sa
    :align: left
    :alt: Menu: Restore file option
 
-`:warning:` The associated metadata file will be deleted.
+`:warning:` The associated metadata file will be deleted if it exists.
 
 |
 
