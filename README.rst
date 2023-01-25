@@ -230,14 +230,10 @@ To display the script `organize_ebooks.py <./find_iorganize_ebooks/scripts/organ
      --ome, --output-metadata-extension EXTENSION  This is the extension of the additional metadata file that is saved next to each newly renamed 
                                                    file. (default: meta)
 
-Explaining some of the options/arguments
-----------------------------------------
-TODO
-
 Script usage
 ============
-Basic command
--------------
+Menu options
+------------
 Let's say that we want to manually organize some books that were labeled as uncertain by the script 
 `organize_ebooks <https://github.com/raul23/organize-ebooks>`_ that automatically organized a 
 collection of ebooks. Here is a basic command that will allow you to manually inspect these uncertain
@@ -462,10 +458,10 @@ and new filenames when showing the similar and different tokens between both str
    :align: left
    :alt: Eval regex for ignoring tokens in filename
 
-Other commands
---------------
-Ouput folders
-"""""""""""""
+Command-line options
+--------------------
+Output folders: ``-o, --output-folders``
+""""""""""""""""""""""""""""""""""""""""
 We can provide a list of output folders that we can use to move ebook and metadata files between them with the command-line 
 option `-o <#list-of-options>`_::
 
@@ -487,11 +483,11 @@ If we type ``0``, the given ebook file along with the associated metadata file a
    :align: left
    :alt: Moving file and metadata to output0/
 
-Custom base directory
-"""""""""""""""""""""
+Custom base directory: ``-c, --custom-move-base-dir``
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Restore files 
-"""""""""""""
+Restore files: ``-r, --restore-original-base-dir`` 
+""""""""""""""""""""""""""""""""""""""""""""""""""
 You can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
 the command-line `-r <#list-of-options>`_::
 
