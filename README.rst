@@ -476,7 +476,7 @@ of the output folders that will be used as the location where the ebook file wil
 Output folders: ``-o, --output-folders``
 """"""""""""""""""""""""""""""""""""""""
 We can provide a list of output folders that we can use to move ebook and metadata files between them with the command-line 
-option `-o <#list-of-options>`_::
+option `-o <#script-s-list-of-options>`_::
 
  $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output0 output1 output2/ output3/
 
@@ -526,7 +526,7 @@ file path starts from the custom base folder we provided to the script (``custom
 Restore files: ``-r, --restore-original-base-dir`` 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 We can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
-the command-line `-r <#list-of-options>`_::
+the command-line `-r <#script-s-list-of-options>`_::
 
  interactive_organizer ~/test/test_organize/commons-books/uncertain/ -r restore/
 
