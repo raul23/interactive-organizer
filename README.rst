@@ -31,8 +31,8 @@ This is a Python port of `interactive-organizer.sh <https://github.com/na--/eboo
 from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `na-- <https://github.com/na-->`_.
 
 Personally, this is the shell script from ``na--`` that I had the most fun porting* to Python since it shows the powerful and interesting
-things that you can do through the terminal and all via a Python script: you can even invoke a bash shell directly from the Python script and then go 
-back to the Python script as if nothing happened! 
+things that you can do through the terminal and all via a Python script: you can even invoke a bash shell directly from the Python script, do your 
+thing with the bash shell like create a folder over here and a file over there and then go back to the Python script as if nothing happened! 
 
 What I also like is how ``na--`` had the great idea of highlighting the differences in the old
 filename compared to the new one for a given renamed ebook. Similar words between both filenames are colored green and those missing
