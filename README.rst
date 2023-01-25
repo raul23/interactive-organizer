@@ -460,6 +460,18 @@ Command-line options
 --------------------
 Quick mode: ``--qm, --quick-mode``
 """"""""""""""""""""""""""""""""""
+If the new filename for a given ebook file is not missing any of the tokens from the old filename, the ebook
+file can be quickly moved to a user specified folder by using the flag ``--qm`` which enables quick mode::
+
+ $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output1/ --qm
+
+`:warning:` It is important to specify at least an output folder with the option ``-o`` since it is the first 
+of the output folders that will be used as the location where the ebook file will be saved.
+
+.. image:: ./images/quick_mode_file_moved.png
+   :target: ./images/quick_mode_file_moved.png
+   :align: left
+   :alt: Quick mode moves file to output folder
 
 Output folders: ``-o, --output-folders``
 """"""""""""""""""""""""""""""""""""""""
@@ -489,7 +501,7 @@ Custom base directory: ``-c, --custom-move-base-dir``
 When using the menu option `-m <#m-move-to-another-folder>`_, you can provide a custom base folder to the script via 
 the ``-c`` command line option::
 
- $ interactive_organizer.py ~/test/test_organize/commons-books/uncertain/ -c custom/
+ $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -c custom/
  
 .. image:: ./images/custom_menu.png
    :target: ./images/custom_menu.png
