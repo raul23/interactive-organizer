@@ -185,11 +185,12 @@ version of the package `interactive_organizer <./interactive_organizer/>`_:
 
 Uninstall
 ---------
-To uninstall the development version of the package `interactive_organizer <./interactive_organizer/>`_:
+To uninstall the development version of the package `interactive_organizer <./interactive_organizer/>`_
+along with the dependency ``organize_ebooks``:
 
 .. code-block:: bash
 
-   pip uninstall interactive_organizer
+   pip uninstall interactive_organizer organize_ebooks
 
 Script's list of options
 ========================
