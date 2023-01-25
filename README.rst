@@ -498,6 +498,8 @@ the command-line `-r <#list-of-options>`_::
    :align: left
    :alt: Menu: Restore file option
 
+|
+
 The script then asks if we want to modify the file path that will be used for saving the restored ebook file:
 
 .. image:: ./images/restore_ask.png
