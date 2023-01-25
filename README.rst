@@ -528,6 +528,8 @@ file path starts from the custom base folder we provided to the script (``custom
 
 `:warning:` As the script warns, the corresponding metadata file will be removed.
 
+|
+
 We can check that the file was moved to the custom base directory by calling a bash shell
 from the Python script (see the menu option `t <#t-run-shell-in-terminal>`_):
 
