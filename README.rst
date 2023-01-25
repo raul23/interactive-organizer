@@ -491,6 +491,15 @@ Custom base directory
 
 Restore files 
 """""""""""""
+You can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
+the `-r <option>`_::
+
+ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -r restore/
+
+.. image:: ./images/restore_menu.png
+   :target: ./images/restore_menu.png
+   :align: left
+   :alt: Menu: Restore file option
 
 Example: manually organize a collection of documents
 ====================================================
