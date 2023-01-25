@@ -10,8 +10,12 @@ import codecs
 import logging
 import os
 
+# TODO
+# __version__ = '0.1.0'
 from interactive_organizer import __version__, lib
+# import lib
 from interactive_organizer.lib import namespace_to_dict, setup_log, blue, green, red, yellow
+# from lib import namespace_to_dict, setup_log, blue, green, red, yellow
 
 # import ipdb
 
@@ -342,4 +346,3 @@ def main():
 if __name__ == '__main__':
     retcode = main()
     show_exit_code(retcode)
-
