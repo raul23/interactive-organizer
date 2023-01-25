@@ -587,8 +587,8 @@ Hence, you can quickly inspect how good of a job the script ``organize_ebooks`` 
 renaming of an ebook: if there are many green words and very few or no red words, then you can
 `move the file <#m-move-to-another-folder>`_ to another folder of your choice.
 
-If no missing words were detected, the file can be `quickly moved <#quick-mode-qm-quick-mode>`_ to an output folder if you 
-used the flag ``--qm`` (quick mode enabled).
+If no missing words were detected, the file can be `quickly moved <#quick-mode-qm-quick-mode>`_ to an output folder if the 
+flag ``--qm`` (quick mode enabled) was used.
 
 Through the Python API
 ----------------------
