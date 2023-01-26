@@ -498,8 +498,8 @@ class InteractiveOrganizer:
                 elif opt in ['o']:
                     logger.info(blue('Opening the document...'))
                     result = open_document(file_path)
-                    # TODO: result.stderr? if returncode!=0?
-                    logger.debug(f'result: {result}')
+                    if result.returncode:
+                        logger.error(red(f'{result.stderr}.strip()'))
                 elif opt in ['l']:
                     open_with_less(file_path, **self.__dict__)
                 elif opt in ['c']:
