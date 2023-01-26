@@ -362,7 +362,7 @@ class InteractiveOrganizer:
             else:
                 metadata_path = f'{file_path}.{self.output_metadata_extension}'
                 with open(metadata_path, 'w') as f:
-                    f.write(f'Old file path       : {file_path}')
+                    f.write(f'Old file path       : {old_path}')
             self._review_file(file_path)
             return 0
         tmpmfile = tempfile.mkstemp(suffix='.txt')[1]
