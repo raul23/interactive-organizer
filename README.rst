@@ -160,7 +160,7 @@ Installing with Docker (Recommended) ⭐
    `:information_source:` 
    
       - ``/host/input/folder`` is a directory within your OS that can contain all the ebooks to be manually organized and
-        is mounted as ``/unorganized-books`` within the Docker container.
+        is mounted as ``/books_to_check`` within the Docker container.
       - You can use the ``-v`` option mulitple times to mount several host output folders within the container, e.g.:
         
         .. code-block:: bash
