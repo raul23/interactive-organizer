@@ -495,6 +495,7 @@ class InteractiveOrganizer:
                         logger.warning(yellow('No path entered, ignoring!'))
                 elif opt in ['i']:
                     self._reorganize_interactively(file_path)
+                    return 0
                 elif opt in ['o']:
                     logger.info(blue('Opening the document...'))
                     result = open_document(file_path)
