@@ -144,9 +144,43 @@ Installing with Docker (Recommended) ⭐
 
   It is recommended to install the Python package `interactive_organizer <./interactive_organizer/>`_ with **Docker** because the Docker
   container has all the many `dependencies <#dependencies>`_ already installed along with the Python package ``interactive_organizer``. 
-  I also included the original bash shell scripts from `ebook-tools <https://github.com/na--/ebook-tools>`_ by `na-- <https://github.com/na-->`_.
 
-TODO
+1. Pull the Docker image from `hub.docker.com <https://hub.docker.com/repository/docker/raul23/organize/general>`_:
+
+   .. code-block:: bash
+
+      docker pull raul23/organize:latest
+
+2. Run the Docker container:
+
+   .. code-block:: bash
+
+      docker run -it -v /host/input/folder:/books_to_check raul23/organize:latest
+   
+   `:information_source:` 
+   
+      - ``/host/input/folder`` is a directory within your OS that can contain all the ebooks to be manually organized and
+        is mounted as ``/unorganized-books`` within the Docker container.
+      - You can use the ``-v`` option mulitple times to mount several host output folders within the container, e.g.:
+        
+        .. code-block:: bash
+        
+           docker run -it -v /host/input/folder:/books_to_check -v /host/output/folder:/output-folder raul23/organize:latest
+      - ``raul23/organize:latest`` is the name of the image upon which the Docker container will be created.
+
+3. Now that you are within the Docker container, you can run the Python script ``interactive_organizer`` with 
+   the desired `options <#script-options>`_::
+
+    user:~$ interactive_organizer /books_to_check/
+   
+   `:information_source:` 
+   
+       - This basic command instructs the script ``interactive_organizer`` to start manually checking the ebooks within ``/books_to_check-books/``.
+       - When you log in as ``user`` (non-root) within the Docker container, your working directory is ``/ebook-tools``.
+
+`:information_source:` The Docker image also comes with the Python package `organize_ebooks <https://github.com/raul23/organize-ebooks>`_. You
+can find more information about the contents of the Docker image at `github.com/raul23/organize-ebook 
+<https://github.com/raul23/organize-ebooks#content-of-the-docker-image>`_
 
 Installing the development version
 ==================================
