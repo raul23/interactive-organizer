@@ -179,7 +179,7 @@ Installing with Docker (Recommended) ⭐
        - When you log in as ``user`` (non-root) within the Docker container, your working directory is ``/ebook-tools``.
 
 `:information_source:` The Docker image also comes with the Python package `organize_ebooks <https://github.com/raul23/organize-ebooks>`_. You
-can find more information about the contents of the Docker image at `github.com/raul23/organize-ebook 
+can find more information about the content of the Docker image at `github.com/raul23/organize-ebook 
 <https://github.com/raul23/organize-ebooks#content-of-the-docker-image>`_
 
 Installing the development version
