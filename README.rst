@@ -169,7 +169,7 @@ Installing with Docker (Recommended) ⭐
       - ``raul23/organize:latest`` is the name of the image upon which the Docker container will be created.
 
 3. Now that you are within the Docker container, you can run the Python script ``interactive_organizer`` with 
-   the desired `options <#script-options>`_::
+   the desired `options <#script-s-list-of-options>`_::
 
     user:~$ interactive_organizer /books_to_check/
    
