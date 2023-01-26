@@ -475,9 +475,11 @@ Command-line options
 Quick mode: ``--qm, --quick-mode``
 """"""""""""""""""""""""""""""""""
 If the new filename for a given ebook file is not missing word from the old filename, the ebook
-file can be quickly moved to a user specified folder by using the flag ``--qm`` which enables quick mode::
+file can be quickly moved to a user specified folder by using the flag ``--qm`` which enables quick mode:
 
- $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output1/ --qm
+.. code-block:: bash
+
+   interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output1/ --qm
 
 `:warning:` It is important to specify at least an output folder with the option ``-o`` since it is the first 
 of the output folders that will be used as the location where the ebook file will be saved.
@@ -490,9 +492,11 @@ of the output folders that will be used as the location where the ebook file wil
 Output folders: ``-o, --output-folders``
 """"""""""""""""""""""""""""""""""""""""
 We can provide a list of output folders that we can use to move ebook and metadata files between them with the command-line 
-option `-o <#script-s-list-of-options>`_::
+option `-o <#script-s-list-of-options>`_:
 
- $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output0 output1 output2/ output3/
+.. code-block:: bash
+
+   interactive_organizer ~/test/test_organize/commons-books/uncertain/ -o output0 output1 output2/ output3/
 
 .. image:: ./images/output_folders_menu3.png
    :target: ./images/output_folders_menu3.png
@@ -513,9 +517,11 @@ If we type ``0``, the given ebook file along with the associated metadata file a
 Custom base directory: ``-c, --custom-move-base-dir``
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 When using the menu option `m <#m-move-to-another-folder>`_, we can provide a custom base folder to the script via 
-the ``-c`` command line option::
+the ``-c`` command line option:
 
- $ interactive_organizer ~/test/test_organize/commons-books/uncertain/ -c custom/
+.. code-block:: bash
+
+   interactive_organizer ~/test/test_organize/commons-books/uncertain/ -c custom/
  
 .. image:: ./images/custom_menu.png
    :target: ./images/custom_menu.png
@@ -547,9 +553,11 @@ from the Python script (see the menu option `t <#t-run-shell-in-terminal>`_):
 Restore files: ``-r, --restore-original-base-dir`` 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 We can restore a given ebook file to the original path (or at least the same folder structure) by providing a base path with
-the command-line `-r <#script-s-list-of-options>`_::
+the command-line `-r <#script-s-list-of-options>`_:
 
- interactive_organizer ~/test/test_organize/commons-books/uncertain/ -r restore/
+.. code-block:: bash
+
+   interactive_organizer ~/test/test_organize/commons-books/uncertain/ -r restore/
 
 .. image:: ./images/restore_menu.png
    :target: ./images/restore_menu.png
@@ -580,9 +588,11 @@ By using tab, the script autocompletes the path that we enter so that it is easi
 
 Example: interactively organize a collection of documents
 =========================================================
-To interactively organize your ebooks, you can start with the following basic command::
+To interactively organize your ebooks, you can start with the following basic command:
+
+.. code-block:: bash
  
- $ interactive_organizer ~/uncertain/
+   interactive_organizer ~/uncertain/
  
 The only required parameter is the input folder that you want to manually check. This input
 folder can be for instance the folder containing uncertain ebooks as renamed by the script 
