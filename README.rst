@@ -175,7 +175,7 @@ Installing with Docker (Recommended) ⭐
    
    `:information_source:` 
    
-       - This basic command instructs the script ``interactive_organizer`` to start manually checking the ebooks within ``/books_to_check-books/``.
+       - This basic command instructs the script ``interactive_organizer`` to start manually checking the ebooks within ``/books_to_check/``.
        - When you log in as ``user`` (non-root) within the Docker container, your working directory is ``/ebook-tools``.
 
 `:information_source:` The Docker image also comes with the Python package `organize_ebooks <https://github.com/raul23/organize-ebooks>`_. You
