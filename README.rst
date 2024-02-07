@@ -264,6 +264,28 @@ To display `organize_ebooks.py <./find_iorganize_ebooks/scripts/organize_ebooks.
                                                    metadata searching like book, novel, series, volume and others, as well as probable publication 
                                                    years like (so 1999 is ignored while 2033 is not).
                                                    (default: ebook|book|novel|series|^ed(ition)?$|^vol(ume)?$|(19[0-9]|20[0-2])[0-9])
+     -m, ---metadata-fetch-order METADATA_SOURCE [METADATA_SOURCE ...]
+                                                   This option allows you to specify the online metadata sources and order in 
+                                                   which the subcommands will try searching in them for books by their ISBN. 
+                                                   The actual search is done by calibre's `fetch-ebook-metadata` 
+                                                   command-line application, so any custom calibre metadata plugins can also 
+                                                   be used. To see the currently available options, run 
+                                                   `fetch-ebook-metadata --help` and check the description for the 
+                                                   `--allowed-plugin` option. If you use Calibre versions that are older than 
+                                                   2.84, it's required to manually set this option to an empty string.
+                                                   (default: ['Goodreads', 'Google', 'Amazon.com', 'ISBNDB', 'WorldCat xISBN', 
+                                                   'OZON.ru'])
+     --owis, --organize-without-isbn-sources METADATA_SOURCE [METADATA_SOURCE ...]
+                                                   This option allows you to specify the online metadata sources in which the 
+                                                   script will try searching for books by non-ISBN metadata (i.e. author and 
+                                                   title). The actual search is done by calibre's `fetch-ebook-metadata`
+                                                   command-line application, so any custom calibre metadata plugins can also 
+                                                   be used. To see the currently available options, run 
+                                                   `fetch-ebook-metadata --help` and check the description for the 
+                                                   `--allowed-plugin` option. Because Calibre versions older than 2.84 don't 
+                                                   support the `--allowed-plugin` option, if you want to use such an old
+                                                   Calibre version you should manually set `organize_without_isbn_sources` to 
+                                                   an empty string. (default: ['Goodreads', 'Google','Amazon.com'])
 
    Input/Output options:
      folder_to_organize                            Folder containing the ebook files that need to be organized.
@@ -273,8 +295,14 @@ To display `organize_ebooks.py <./find_iorganize_ebooks/scripts/organize_ebooks.
                                                    because of tab autocompletion. (default: )
      -r, --restore-original-base-dir PATH          If you want to enable the option of restoring files to their original folders (or at least with the 
                                                    same folder structure), set this as the base path. (default: )
-     --ome, --output-metadata-extension EXTENSION  This is the extension of the additional metadata file that is saved next to each newly renamed 
-                                                   file. (default: meta)
+     --oft, --output-filename-template TEMPLATE    This specifies how the filenames of the organized files will look. It is a 
+                                                   bash string that is evaluated so it can be very flexible (and also 
+                                                   potentially unsafe). (default: ${d[AUTHORS]// & /, } - ${d[SERIES]:+
+                                                   [${d[SERIES]}] - }${d[TITLE]/:/ -}${d[PUBLISHED]:+ 
+                                                   (${d[PUBLISHED]%-*})}${d[ISBN]:+[${d[ISBN]}]}.${d[EXT]})
+     --ome, --output-metadata-extension EXTENSION  This is the extension of the additional metadata file
+                                                   that is saved next to each newly renamed file.
+                                                   (default: meta)
 
 Script usage
 ============
