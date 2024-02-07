@@ -256,6 +256,34 @@ def setup_argparser():
             as well as probable publication years like (so 1999 is ignored while
             2033 is not).'''
              + get_default_message(lib.TOKENS_TO_IGNORE))
+    interactive_group.add_argument(
+        "-m", "---metadata-fetch-order", nargs='+',
+        dest='isbn_metadata_fetch_order', metavar='METADATA_SOURCE',
+        help='''This option allows you to specify the online metadata
+                sources and order in which the subcommands will try searching in
+                them for books by their ISBN. The actual search is done by
+                calibre's `fetch-ebook-metadata` command-line application, so any
+                custom calibre metadata plugins can also be used. To see the
+                currently available options, run `fetch-ebook-metadata --help` and
+                check the description for the `--allowed-plugin` option. If you use
+                Calibre versions that are older than 2.84, it's required to
+                manually set this option to an empty string.'''
+             + get_default_message(lib.ISBN_METADATA_FETCH_ORDER))
+    interactive_group.add_argument(
+        '--owis', '--organize-without-isbn-sources', nargs='+',
+        dest='organize_without_isbn_sources', metavar='METADATA_SOURCE',
+        default=lib.ORGANIZE_WITHOUT_ISBN_SOURCES,
+        help='''This option allows you to specify the online metadata sources
+            in which the script will try searching for books by non-ISBN
+            metadata (i.e. author and title). The actual search is done by
+            calibre's `fetch-ebook-metadata` command-line application, so any
+            custom calibre metadata plugins can also be used. To see the currently
+            available options, run `fetch-ebook-metadata --help` and check the
+            description for the `--allowed-plugin` option. Because Calibre versions
+            older than 2.84 don't support the `--allowed-plugin` option, if you
+            want to use such an old Calibre version you should manually set
+            `organize_without_isbn_sources` to an empty string.'''
+             + get_default_message(lib.ORGANIZE_WITHOUT_ISBN_SOURCES))
     # It is hardcoded, no custom support
     """
     interactive_group.add_argument(
@@ -301,6 +329,13 @@ def setup_argparser():
              'original folders (or at least with the same folder structure), '
              'set this as the base path.'
              + get_default_message(lib.RESTORE_ORIGINAL_BASE_DIR))
+    input_output_group.add_argument(
+        '--oft', '--output-filename-template', dest='output_filename_template',
+        metavar='TEMPLATE',
+        help='''This specifies how the filenames of the organized files will
+                look. It is a bash string that is evaluated so it can be very flexible
+                (and also potentially unsafe).''' +
+             get_default_message(lib.OUTPUT_FILENAME_TEMPLATE))
     input_output_group.add_argument(
         '--ome', '--output-metadata-extension', dest='output_metadata_extension',
         metavar='EXTENSION',
