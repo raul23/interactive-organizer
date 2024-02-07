@@ -65,6 +65,15 @@ TOKEN_MIN_LENGTH = 3
 # NOTE: Structured -> Structur (ed removed because 'ed(ition)?')
 # Thus, '^' before and '$' after 'ed(ition)'. ed not counted as ed(ition) in Structured
 TOKENS_TO_IGNORE = f'ebook|book|novel|series|^ed(ition)?$|^vol(ume)?$|{get_re_year()}'
+ISBN_METADATA_FETCH_ORDER = ['Goodreads', 'Google', 'Amazon.com', 'ISBNDB', 'WorldCat xISBN', 'OZON.ru']
+ORGANIZE_WITHOUT_ISBN_SOURCES = ['Goodreads', 'Google', 'Amazon.com']
+
+# ====================
+# Input/Output options
+# ====================
+OUTPUT_FILENAME_TEMPLATE = "${d[AUTHORS]// & /, } - ${d[SERIES]:+[${d[SERIES]}] " \
+                           "- }${d[TITLE]/:/ -}${d[PUBLISHED]:+ (${d[PUBLISHED]%%-*})}" \
+                           "${d[ISBN]:+ [${d[ISBN]}]}.${d[EXT]}"
 
 
 # Ref.: https://stackoverflow.com/a/510404
@@ -175,6 +184,8 @@ class InteractiveOrganizer:
         self.quick_mode = QUICK_MODE
         self.token_min_length = TOKEN_MIN_LENGTH
         self.tokens_to_ignore = TOKENS_TO_IGNORE
+        self.isbn_metadata_fetch_order = ISBN_METADATA_FETCH_ORDER
+        self.organize_without_isbn_sources = ORGANIZE_WITHOUT_ISBN_SOURCES
         # self.diacritic_difference_maskings = DIACRITIC_DIFFERENCE_MASKINGS
         # self.match_partial_words = MATCH_PARTIAL_WORDS
         # ====================
@@ -185,6 +196,7 @@ class InteractiveOrganizer:
         self.custom_move_base_dir = CUSTOM_MOVE_BASE_DIR
         self.restore_original_base_dir = RESTORE_ORIGINAL_BASE_DIR
         self.output_metadata_extension = OUTPUT_METADATA_EXTENSION
+        self.output_filename_template = OUTPUT_FILENAME_TEMPLATE
 
     @staticmethod
     def _color_tokens_in_string(s, tokens, color='red'):
@@ -431,6 +443,7 @@ class InteractiveOrganizer:
                 file_path = move_or_link_ebook_file_and_metadata(
                     file_folder, file_path, tmpmfile, dry_run=self.dry_run,
                     keep_metadata=True,
+                    output_filename_template=self.output_filename_template,
                     output_metadata_extension=self.output_metadata_extension,
                     symlink_only=self.symlink_only)
                 logger.debug(f"New path is '{file_path}'! Reviewing the new file...")
@@ -574,6 +587,11 @@ class InteractiveOrganizer:
         if self.output_folders is None:
             self.output_folders = []
         self._update(**kwargs)
+        # IMPORTANT TODO: hack to be removed
+        global OUTPUT_FILENAME_TEMPLATE, ISBN_METADATA_FETCH_ORDER, ORGANIZE_WITHOUT_ISBN_SOURCES
+        OUTPUT_FILENAME_TEMPLATE = self.output_filename_template
+        ISBN_METADATA_FETCH_ORDER = self.isbn_metadata_fetch_order
+        ORGANIZE_WITHOUT_ISBN_SOURCES = self.organize_without_isbn_sources
         files = []
         if is_dir_empty(folder_to_organize):
             logger.warning(yellow(f'Folder is empty: {folder_to_organize}'))
