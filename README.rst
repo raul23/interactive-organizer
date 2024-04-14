@@ -8,11 +8,6 @@ from `ebook-tools <https://github.com/na--/ebook-tools>`_ written in shell by `n
    :target: ./images/basic_command_menu.png
    :align: left
    :alt: Highlight in the old filename showing differences with new filename
-
-.. contents:: **Contents**
-   :depth: 3
-   :local:
-   :backlinks: top
  
 About
 =====
